@@ -1,2 +1,2 @@
-# jstesting
-Learn how to test in javascript using Jest.
+# JS Learning
+Learn JavaScript stuff.
