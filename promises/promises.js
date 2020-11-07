@@ -14,3 +14,7 @@ prometoAprenderJavascript().then(() => {
     prometoAprenderNode()
     console.log('Aprendi os dois.')
 })
+
+Promise.all([prometoAprenderJavascript(), prometoAprenderNode()]).then(() => {
+    console.log('Aprendi os dois concorrentemente.')
+})
