@@ -18,3 +18,7 @@ prometoAprenderJavascript().then(() => {
 Promise.all([prometoAprenderJavascript(), prometoAprenderNode()]).then(() => {
     console.log('Aprendi os dois concorrentemente.')
 })
+
+Promise.race([prometoAprenderJavascript(), prometoAprenderNode()]).then(() => {
+    console.log('Assim que alguma das promises terminar, eu aviso.')
+})
