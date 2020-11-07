@@ -1,7 +1,16 @@
 const prometoAprenderJavascript = () => {
     return new Promise((resolve, reject) => {
-        resolve(console.log('Aprendi JavaScript.'));
-})
+        resolve(console.log('Promessa de aprender JavaScript cumprida.'));
+    })
 }
 
-prometoAprenderJavascript().then(console.log('Agora consigo criar um site.'))
+const prometoAprenderNode = () => {
+    return new Promise((resolve, reject) => {
+        resolve(console.log('Promessa de aprender Node cumprida.'));
+    })
+}
+
+prometoAprenderJavascript().then(() => {
+    prometoAprenderNode()
+    console.log('Aprendi os dois.')
+})
